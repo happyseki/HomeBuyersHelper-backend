@@ -10,3 +10,10 @@ houses=[
   {price:950000, area:"4 bd|3 ba|2,055 sqft", location:"2110 Murray St, Whitestone, NY 11357", tax:700, insurance:112}
 ]
 houses.each{|house| House.create!(house)}
+
+images = [
+  { name: "sf.jpeg", house_id: 1 }, { name: "park.jpg", house_id: 1 }, { name: "front.jpeg", house_id: 1 },
+  { name: "sfbed.jpg", house_id: 1 },{ name: "sfbed2.jpg", house_id: 1 },{ name: "sfbed3.jpg", house_id: 1 },
+  { name: "sfkitch.jpg", house_id: 1 },{ name: "sfbth.jpg", house_id: 1 }
+]
+images.each{|image|Image.create!(image)}
