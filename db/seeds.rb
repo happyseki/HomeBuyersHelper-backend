@@ -5,20 +5,26 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "seeding houses"
+
 houses=[
-  {price:785000, area:"3 bd|2 ba|1,128 sqft", location:"501* Springfield Blvd, Bayside Hills, NY 11364", tax:580, insurance:90},
-  {price:950000, area:"4 bd|3 ba|2,055 sqft", location:"211* Murray St, Whitestone, NY 11357", tax:700, insurance:112},
-  {price:800000, area:"3 bd|2 ba|1,400 sqft", location:"663* Saunders St, Rego Park, NY 11374", tax:560, insurance:310},
-  {price:880000, area:"3 bd|3 ba|1,260 sqft", location:"685* Selfridge St, Forest Hills, NY 11375", tax:600, insurance:312},
-  {price:700000, area:"2 bd|2 ba|1,200 sqft", location:"561* 28th Ave, Woodside, NY 11377", tax:600, insurance:300},
-  {price:780000, area:"3 bd|2 ba|1,000 sqft", location:"421* Astoria Blvd, Astoria, NY 11103", tax:560, insurance:280},
-  {price:660000, area:"3 bd|2 ba|750 sqft", location:"31* 90th St, Brooklyn, NY 11209", tax:360, insurance:230},
-  {price:760000, area:"2 bd|2 ba|800 sqft", location:"65* 88th St, Brooklyn, NY 11228", tax:400, insurance:260},
-  {price:650000, area:"2 bd|2 ba|950 sqft", location:"75* 39th St, Brooklyn, NY 11232", tax:350, insurance:220},
-  {price:708000, area:"3 bd|2 ba|1500 sqft", location:"1* Oakland Pl, Brooklyn, NY 11226", tax:380, insurance:240}
+  {price: 785000, area: "3 bd|2 ba|1,128 sqft", location: "501* Springfield Blvd, Bayside Hills, NY 11364", house_type: "Single Family House", tax: 580, insurance: 90},
+  {price: 950000, area: "4 bd|3 ba|2,055 sqft", location: "211* Murray St, Whitestone, NY 11357", house_type: "Single Family House", tax: 700, insurance: 112},
+  {price: 800000, area: "3 bd|2 ba|1,400 sqft", location: "663* Saunders St, Rego Park, NY 11374", house_type: "Single Family House", tax: 560, insurance: 310},
+  {price: 880000, area: "3 bd|3 ba|1,260 sqft", location: "685* Selfridge St, Forest Hills, NY 11375", house_type: "Single Family House", tax: 600, insurance: 312},
+  {price: 700000, area: "2 bd|2 ba|1,200 sqft", location: "561* 28th Ave, Woodside, NY 11377", house_type: "Single Family House", tax: 600, insurance: 300},
+  {price: 780000, area: "3 bd|2 ba|1,000 sqft", location: "421* Astoria Blvd, Astoria, NY 11103", house_type: "Single Family House", tax: 560, insurance: 280},
+  {price: 660000, area: "3 bd|2 ba|750 sqft", location: "31* 90th St, Brooklyn, NY 11209", house_type: "Single Family House", tax: 360, insurance: 230},
+  {price: 760000, area: "2 bd|2 ba|800 sqft", location: "65* 88th St, Brooklyn, NY 11228", house_type: "Single Family House", tax: 400, insurance: 260},
+  {price: 650000, area: "2 bd|2 ba|950 sqft", location: "75* 39th St, Brooklyn, NY 11232", house_type: "Single Family House", tax: 350, insurance: 220},
+  {price: 708000, area: "3 bd|2 ba|1500 sqft", location: "1* Oakland Pl, Brooklyn, NY 11226", house_type: "Single Family House", tax: 380, insurance: 240}
+
 
 ]
 houses.each{|house| House.create!(house)}
+
+puts "houses made"
+puts "seeding images"
 
 images = [
   { name: "https://cdn.pixabay.com/photo/2015/09/21/02/53/house-949265_960_720.jpg", house_id: 1 },
@@ -91,7 +97,7 @@ images = [
   { name: "https://cdn.pixabay.com/photo/2016/07/28/06/05/white-1547092_960_720.jpg", house_id: 9 },
   { name: "https://cdn.pixabay.com/photo/2013/09/25/18/02/house-186400_960_720.jpg", house_id: 10 },
   { name: "https://cdn.pixabay.com/photo/2016/12/30/08/00/kitchen-1940177__340.jpg", house_id: 10 },
-  { name: "https://unsplash.com/photos/H7SqlUp4JVE", house_id: 10 },
+  { name: "https://images.unsplash.com/photo-1554861148-57c68cd01604?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80", house_id: 10 },
   { name: "https://cdn.pixabay.com/photo/2017/03/10/10/07/nursery-2132345_960_720.jpg", house_id: 10 },
   { name: "https://cdn.pixabay.com/photo/2016/12/30/07/56/bathroom-1940171__340.jpg", house_id: 10 },
   { name: "https://cdn.pixabay.com/photo/2018/08/09/03/58/home-3593729_960_720.jpg", house_id: 10 },
@@ -100,5 +106,7 @@ images = [
 
 ]
 images.each{|image|Image.create!(image)}
+
+puts "images seeded"
 
   # { name: "https://cdn.pixabay.com/photo/2015/08/16/04/03/crib-890565_960_720.jpg", house_id:  },
