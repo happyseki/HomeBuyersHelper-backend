@@ -17,9 +17,13 @@ houses=[
   {price: 660000, area: "3 bd|2 ba|750 sqft", location: "31* 90th St, Brooklyn, NY 11209", house_type: "Single Family House", tax: 360, insurance: 230},
   {price: 760000, area: "2 bd|2 ba|800 sqft", location: "65* 88th St, Brooklyn, NY 11228", house_type: "Single Family House", tax: 400, insurance: 260},
   {price: 650000, area: "2 bd|2 ba|950 sqft", location: "75* 39th St, Brooklyn, NY 11232", house_type: "Single Family House", tax: 350, insurance: 220},
-  {price: 708000, area: "3 bd|2 ba|1500 sqft", location: "1* Oakland Pl, Brooklyn, NY 11226", house_type: "Single Family House", tax: 380, insurance: 240}
-
-
+  {price: 708000, area: "3 bd|2 ba|1500 sqft", location: "1* Oakland Pl, Brooklyn, NY 11226", house_type: "Single Family House", tax: 380, insurance: 240},
+  {price: 230000, area: "1 bd| 1ba|760 sqft", location: "322* 89th St APT A206, East Elmhurst, NY 11369", house_type: "co-op", tax: 0, insurance: 0},
+  {price: 390000, area: "1 bd| 1ba|800 sqft", location: "8* Hicks St APT 3F, Brooklyn, NY 11201", house_type: "co-op", tax: 0, insurance: 0},
+  {price: 350000, area: "1 bd| 1ba|900 sqft", location: "63-6* 99th St APT B5, Rego Park, NY 11374", house_type: "co-op", tax: 0, insurance: 0},
+  {price: 390000, area: "2 bd| 1ba|800 sqft", location: "10* Division Ave APT 35, Brooklyn, NY 11211", house_type: "co-op", tax: 0, insurance: 0},
+  {price: 490000, area: "1 bd| 1ba|600 sqft", location: "44* E 86th St APT 10B, New York, NY 10028", house_type: "co-op", tax: 0, insurance: 0},
+  {price: 650000, area: "1 bd| 1ba|650 sqft", location: "44* W End Ave # 3-F, New York, NY 10024", house_type: "co-op", tax: 0, insurance: 0}
 ]
 houses.each{|house| House.create!(house)}
 
@@ -102,7 +106,44 @@ images = [
   { name: "https://cdn.pixabay.com/photo/2016/12/30/07/56/bathroom-1940171__340.jpg", house_id: 10 },
   { name: "https://cdn.pixabay.com/photo/2018/08/09/03/58/home-3593729_960_720.jpg", house_id: 10 },
   { name: "https://cdn.pixabay.com/photo/2018/10/28/12/37/bedroom-3778695_960_720.jpg", house_id: 10 },
-  { name: "https://images.unsplash.com/photo-1444392061186-9fc38f84f726?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80", house_id: 10 }
+  { name: "https://images.unsplash.com/photo-1444392061186-9fc38f84f726?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80", house_id: 10 },
+  { name: "https://images.unsplash.com/photo-1499955085172-a104c9463ece?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80", house_id: 11 },
+  { name: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80", house_id: 11 },
+  { name: "https://images.unsplash.com/photo-1556185781-a47769abb7ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 11 },
+  { name: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60", house_id: 11 },
+  { name: "https://images.unsplash.com/photo-1553444835-65ddad82cd2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 11 },
+  { name: "https://images.unsplash.com/photo-1547453259-eddb9bf6c67e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 11 },
+  { name: "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 12 },
+  { name: "https://images.unsplash.com/photo-1561461666-f4a22e19c10d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 12 },
+  { name: "https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 12 },
+  { name: "https://images.unsplash.com/photo-1553444836-bc6c8d340ba7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 12 },
+  { name: "https://images.unsplash.com/photo-1545022388-9ba226b35a7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", house_id: 12 },
+  { name: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80", house_id: 12 },
+  { name: "https://cdn.pixabay.com/photo/2016/08/26/15/06/home-1622401_960_720.jpg", house_id: 13 },
+  { name: "https://images.unsplash.com/photo-1546551613-09c2f83e1ede?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80", house_id: 13 },
+  { name: "https://images.unsplash.com/photo-1505693314120-0d443867891c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1091&q=80", house_id: 13 },
+  { name: "https://images.unsplash.com/photo-1549536982-9939f66d0cd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80", house_id: 13 },
+  { name: "https://images.unsplash.com/photo-1543248939-ff40856f65d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80", house_id: 13 },
+  { name: "https://cdn.pixabay.com/photo/2014/12/14/16/05/laundry-saloon-567951_960_720.jpg", house_id: 13 },
+  { name: "https://cdn.pixabay.com/photo/2018/02/12/10/07/apartment-lounge-3147892_960_720.jpg", house_id: 14 },
+  { name: "https://images.unsplash.com/photo-1517490669541-027076efe23a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80", house_id: 14 },
+  { name: "https://images.unsplash.com/photo-1534353641488-754bfb2d6cd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", house_id: 14 },
+  { name: "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", house_id: 14 },
+  { name: "https://cdn.pixabay.com/photo/2016/12/30/07/55/bedroom-1940169_960_720.jpg", house_id: 14 },
+  { name: "https://cdn.pixabay.com/photo/2015/08/16/04/04/bed-890567_960_720.jpg", house_id: 14 },
+  { name: "https://images.unsplash.com/photo-1517414628894-83d47b22f233?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", house_id: 14 },
+  { name: "https://images.unsplash.com/photo-1541123603104-512919d6a96c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", house_id: 15 },
+  { name: "https://images.unsplash.com/photo-1508163356824-03f81a9d4e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80", house_id: 15 },
+  { name: "https://images.unsplash.com/photo-1545022274-374b93f5dc2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80", house_id: 15 },
+  { name: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80", house_id: 15 },
+  { name: "https://images.unsplash.com/photo-1547635907-5c7558c31bf5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", house_id: 15 },
+  { name: "https://cdn.pixabay.com/photo/2015/11/16/19/33/new-york-1046218_960_720.jpg", house_id: 15 },
+  { name: "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80", house_id: 16 },
+  { name: "https://images.unsplash.com/photo-1560274765-0eca9a98bf07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=335&q=80", house_id: 16 },
+  { name: "https://images.unsplash.com/photo-1544207240-42895ede7c09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80", house_id: 16 },
+  { name: "https://images.unsplash.com/photo-1553444836-bc6c8d340ba7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80", house_id: 16 },
+  { name: "https://images.unsplash.com/photo-1553444835-65ddad82cd2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1462&q=80", house_id: 16 },
+  { name: "https://cdn.pixabay.com/photo/2015/11/16/19/33/new-york-1046218_960_720.jpg", house_id: 16 }
 
 ]
 images.each{|image|Image.create!(image)}
